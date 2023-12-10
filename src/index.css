@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/*HOME*/
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+/*HEADER*/
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(212, 205, 205);
+  padding: 8px 20px;
+}
+
+.Header .Navigation li {
+  list-style: none;
+}
+
+.Header .Navigation ul li {
+  display: inline-flex;
+  padding: 7px 10px;
+}
+
+.Header .Navigation ul li a {
+  text-decoration: none;
+  color: rgb(188, 124, 35);
+  font-size: 15px;
+  font-weight: 500;
+}
+.Header .btn {
+  padding: 6px 10px;
+  border: none;
+  background-color: rgb(19, 63, 121);
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(188, 124, 35);
+  font-weight: bold;
+}
+
+/*MAIN*/
+.col-mg1 {
+  background-color: #0e49ac;
+  width: 250px;
+  height: 280px;
+  display: inline-block;
+  margin: 0 23px;
+  margin-top: 50px;
+  margin-left: 100px;
+  vertical-align: middle;
+  gap: 4rem;
+  transition: 0.6s, ease;
+}
+.col-mg1:hover {
+  transform: translateY(-10px);
+}
+.btn-btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: rgb(19, 63, 121);
+  color: rgb(171, 117, 47);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color, color 0.15s;
+}
+.btn-btn:hover {
+  background-color: rgba(2, 24, 69, 0.908);
+  color: rgb(171, 117, 47);
+}
+.btn-btn:active {
+  opacity: 0.7;
+}
+
+.main1 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.col h2 {
+  font-size: 45px;
+}
+.col h3 {
+  font-size: 28px;
+}
+.col button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-top: 20px;
+  background-color: rgb(19, 63, 121);
+  color: rgb(171, 117, 47);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* FOOTER*/
+.section_padding {
+  padding: 4rem 4rem;
+}
+
+.footer {
+  background-color: rgb(7, 42, 88);
+}
+.sb_footer {
+  display: flex;
+  flex-direction: column;
+}
+.sb_footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.sb_footer-links_div {
+  width: 150px;
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: rgb(171, 117, 47);
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.sb_footer-links_div h1 {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0.9rem;
+}
+.sb_footer-links_div p {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.hr {
+  background-color: rgb(179, 174, 174);
+}
+.sb_footer-below {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+.sb_footer-below_links {
+  display: flex;
+  flex-direction: row;
+}
+.sb_footer-below_links {
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 2rem;
+  font-weight: 600;
+}
+.sb_footer-copyright p {
+  font-size: 13px;
+  line-height: 15px;
+  color: aliceblue;
+}
+/*SIDEBAR*/
+.m-2 .brand-name {
+  margin-bottom: 20px;
+}
+.m-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bg-white {
+  background-color: white;
+  display: inline-block;
+  width: 220;
+}
+
+.list-group a {
+  color: black;
+  text-align: center;
+}
+
+.list-group a:hover {
+  color: #fff;
+  width: 220px;
+}
+.list-item .fs-5 {
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  background-color: gray;
+}
+
+@media screen and(max-width:850px) {
+  .sb_footer-heading h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+@media screen and(max-width:550px) {
+  .sb_footer-heading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .sb_footer-links_div {
+    margin: 1rem 0;
+  }
+
+  .sb_footer-btn {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .sb_footer-below {
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .sb_footer-below_links {
+    flex-direction: column;
+  }
+  .sb_footer-below_links p {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and(max-width:420px) {
+  .sb_footer-heading h1 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}
+
+/* Login Form */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("C:\Users\HP\Desktop\student-grade-reporting-system\11019725_DCIT205_Assignment1\grade-reporting-system\public\images\bckgrd_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "typographia-font";
+  src: url(../fonts/typographica-font/Typographica-Blp5.ttf);
+}
+
+.page {
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.cover {
+  background-color: white;
+  width: 26em;
+  height: 33em;
+  position: relative;
+  border-radius: 1em;
+  box-shadow: 0 0.188em 1.55em rgb(100, 156, 156);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 
+input {
+  border: none;
+  background-color: rgb(229, 226, 226);
+  height: 4em;
+  width: 80%;
+  border-radius: 0.25em;
+  text-align: center;
+} */
+
+/* input:focus {
+  outline-color: rgb(32, 177, 255);
+} */
+
+.login-btn {
+  width: 40%;
+  height: 3em;
+  background-color: rgb(32, 177, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  transform: scale(1.25);
+}
+
+.login-text {
+  position: relative;
+  bottom: -2em;
+}
+
+.hide {
+  position: absolute;
+  transform: scale(0);
+}
+
+.login-popup {
+  position: absolute;
+  height: 30em;
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25em;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  transform: scale(1);
+  transition: 1.5s;
+}
